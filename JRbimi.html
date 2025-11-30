@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BIMI Link Test</title>
+    <style>
+        body { font-family: sans-serif; text-align: center; padding: 50px; background: #f4f4f4; }
+        .box { background: white; padding: 20px; border-radius: 10px; display: inline-block; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+        img { width: 150px; height: 150px; border: 1px dashed #ccc; background: #fff; }
+        .status { margin-top: 15px; font-weight: bold; }
+        .success { color: green; }
+        .error { color: red; }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h3>Your Cloudinary BIMI Test</h3>
+        <!-- This attempts to load your specific image -->
+        <img src="https://res.cloudinary.com/dzgh1ydmf/image/upload/fl_sanitize/v1764516462/JBRbimisvg.svg" alt="Logo Test">
+        
+        <div class="status">
+            Check the box above:<br>
+            <span class="success">See a Logo?</span> Link is working.<br>
+            <span class="error">See a broken icon?</span> File code is invalid.
+        </div>
+        <p><small>Note: I added the 'fl_sanitize' flag to your link automatically.</small></p>
+    </div>
+</body>
+</html>
